@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index2.js" defer></script>
+  </head>
+
+  <!-- Change code below this line -->
+
+  <body class="bg-[#181028] flex justify-center items-center min-h-screen">
+    <main class="bg-white lg:container rounded-3xl overflow-hidden">
+      <header
+        class="flex justify-between items-center py-6 px-6 border-b border-slate-300"
+      >
+        <h1 class="space-x-2">
+          <span class="bg-indigo-950 p-3 rounded-full text-white">UI</span>
+          <span class="capitalize">Design daily</span>
+        </h1>
+        <nav class="ml-3 xl:block hidden">
+          <ul id="nav-bar" class="flex items-center space-x-4"></ul>
+        </nav>
+        <div
+          class="*:capitalize *:px-5 *:py-3 *:rounded-xl *:shadow-lg space-x-3"
+        >
+          <button
+            class="hover:scale-95 bg-slate-100 transition-all duration-300"
+          >
+            log in
+          </button>
+          <button
+            class="hover:scale-95 transition-all duration-300 bg-indigo-950 text-white"
+          >
+            sign up
+          </button>
+        </div>
+      </header>
+      <section class="flex flex-col items-center justify-center py-32">
+        <h2 class="text-4xl first-letter:uppercase font-bold">
+          free <span class="uppercase">ui</span> resources for everyone
+        </h2>
+        <p
+          class="xl:w-[30%] w-[50%] font-thin leading-tight text-center mt-3 mb-8"
+        >
+          The largest database of 100% free Ul components and designs available
+          in the formats popular by Ul designers.
+        </p>
+        <div
+          class="flex space-x-5 px-4 w-1/2 shadow-md h-14 rounded-2xl items-center"
+        >
+          <div class="flex items-center">
+            <select
+              name=""
+              id="filter-options"
+              class="appearance-none w-fit px-2 py-1 outline-none capitalize"
+            ></select>
+            <label for="filter-options">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </label>
+          </div>
+          <div class="flex items-center space-x-2 grow h-full">
+            <label for="search-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-6 stroke-gray-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </label>
+            <input
+              type="text"
+              class="grow h-full outline-none pl-4"
+              id="search-box"
+              placeholder="Search"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="flex items-center justify-between px-4">
+          <div
+            class="flex h-16 p-1 rounded-full border space-x-1"
+            id="btn-container"
+          >
+            <button
+              class="px-5 h-full capitalize transition-all duration-300 rounded-full shadow-lg border"
+            >
+              latest
+            </button>
+            <button
+              class="px-5 h-full capitalize transition-all duration-300 rounded-full"
+            >
+              populer
+            </button>
+          </div>
+          <ul id="catogory-container" class="flex space-x-4"></ul>
+          <ul id="platforms" class="flex space-x-2"></ul>
+        </div>
+        <div id="card-container" class="grid xl:grid-cols-3 p-4 gap-4"></div>
+      </section>
+    </main>
+  </body>
+  <!-- Change code above this line -->
+</html>
